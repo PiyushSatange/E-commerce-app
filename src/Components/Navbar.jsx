@@ -1,9 +1,12 @@
 import React from 'react'
 import styled from 'styled-components'
-import {FaSearch} from "react-icons/fa";
-import {FaShoppingCart} from "react-icons/fa"
+import { Badge } from '@mui/material';
+import { SearchOutlined , ShoppingCartOutlined } from '@mui/icons-material'
+import { Link } from "react-router-dom";
+
 
 const Container = styled.div`
+    height: 50px;
 `;
 
 const Wrapper = styled.div`
@@ -21,21 +24,34 @@ const Left = styled.div`
 const Language = styled.span`
     padding-left: 13px;
     cursor: pointer;
+    font-size: 18px;
     font-weight: bold;
 `;
 
 const SearchContainer = styled.div`
-    border: 2px solid #d5d5d5;
+    display: flex;    
+    align-items: center;
+    border: 1px solid gray;
     margin: 12px;
-    padding: 5px 12px 5px 30px;
+    border-radius: 5px;
+    height: 30px;
+    width: 60%;
 `;
 
 const Input = styled.input`
+    flex: 4;
     border: none;
-    height: 20px;
-
-
+    height: 95%;
+    width: 100%;
 `;
+
+const Button = styled.button`
+    flex: 1;
+    background-color: black;
+    color: white;
+    height: 100%;
+    cursor: pointer;
+`
 
 const Center = styled.div`
     flex: 1;
@@ -46,6 +62,9 @@ const Center = styled.div`
 
 const Logo = styled.h1`
     font-weight: bolder;
+    font-size: 40px;
+    color: black;
+
 `;
 
 const Right = styled.div`
@@ -60,32 +79,48 @@ const MenuItem = styled.div`
     cursor: pointer;
     margin-left: 25px;
     font-weight: bold;
+    color: gray;
+
+    &:hover{
+        color: black;
+    }
 `;
 
 const Navbar = () => {
-  return (
-    <Container>
-        <Wrapper>
-            <Left>
-                <Language>EN</Language>
-                <SearchContainer>
-                    <Input/>
-                    <FaSearch />                
-                </SearchContainer>
-            </Left>
-            <Center>
-                <Logo>LAMA.</Logo>
-            </Center>
-            <Right>
-                <MenuItem>REGISTER</MenuItem>
-                <MenuItem>LOG IN</MenuItem>
-                <MenuItem><p><FaShoppingCart/></p></MenuItem>
-                
-            </Right>
-        </Wrapper>
-    </Container>
+    return (
+        <Container>
+            <Wrapper>
+                <Left>
+                    <Language>EN</Language>
+                    <SearchContainer>
+                        <Input />
+                        <Button><SearchOutlined/></Button>
+                    </SearchContainer>
+                </Left>
+                <Center>
+                <Link to={"/"} style={{textDecoration: "none"}}>
+                    <Logo>LAMA.</Logo>
+                </Link>
+                </Center>
+                <Right>
+                <Link to={"/Rejester"} style={{textDecoration: "none"}}>     
+                    <MenuItem>REGISTER</MenuItem>
+                    </Link>
+                    <Link to={"/Login"} style={{textDecoration: "none"}}>
+                    <MenuItem>LOG IN</MenuItem>
+                    </Link>
+                    <Link to={"/Cart"}>
+                    <MenuItem>
+                        <Badge badgeContent={2} color="primary">
+                            <ShoppingCartOutlined style={{ color: "black" }} />
+                        </Badge>
+                    </MenuItem>
+                    </Link>
+                </Right>
+            </Wrapper>
+        </Container>
 
-  )
+    )
 }
 
-export default Navbar
+export default Navbar;
