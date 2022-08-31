@@ -18,8 +18,6 @@ ReactDOM.createRoot(
 );
 
 
-
-
 const App = () => {
   return(
     <BrowserRouter>
