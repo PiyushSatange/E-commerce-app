@@ -99,7 +99,7 @@ const Navbar = () => {
                 </Left>
                 <Center>
                 <Link to={"/"} style={{textDecoration: "none"}}>
-                    <Logo>LAMA.</Logo>
+                    <Logo>PNVS.COM</Logo>
                 </Link>
                 </Center>
                 <Right>

@@ -100,22 +100,22 @@ export const Slider = () => {
             </Arrow>
             <Wrapper slideIndex={slideIndex}>
                 {sliderItems.map((item)=>(
-                <Slide bg={item.bg}>
-                    <ImgContainer>
-                        <Image src={item.img} alt="Not Loading"/>
-                    </ImgContainer>
-                    <InfoContainer>
-                        <Title>
-                            {item.title}
-                        </Title>
-                        <Info>
-                            {item.info}
-                        </Info>
-                        <Button>
-                           SHOP NOW
-                        </Button>
-                    </InfoContainer>
-                </Slide>
+                    <Slide bg={item.bg}>
+                        <ImgContainer>
+                            <Image src={item.img} alt="Not Loading"/>
+                        </ImgContainer>
+                        <InfoContainer>
+                            <Title>
+                                {item.title}
+                            </Title>
+                            <Info>
+                                {item.info}
+                            </Info>
+                            <Button>
+                            SHOP NOW
+                            </Button>
+                        </InfoContainer>
+                    </Slide>
                 ))}
             </Wrapper>
             <Arrow direction = "right" onClick={()=>handleClick("right")}>

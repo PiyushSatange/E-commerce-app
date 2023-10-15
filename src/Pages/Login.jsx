@@ -5,7 +5,7 @@ const Container = styled.div`
     width: 100%;
     height: 100vh;
     display: flex;
-    background-image: url("https://images.pexels.com/photos/6984650/pexels-photo-6984650.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"), linear-gradient(#AABBCC, #B7CCA9);
+    background-image: url("https://images.pexels.com/photos/6984650/pexels-photo-6984650.jpeg"), linear-gradient(#AABBCC, #B7CCA9);
     background-size: cover;
     align-items: center;
     justify-content: center;
@@ -59,15 +59,15 @@ const Login = () => {
   return (
     <Container>
         <Wrapper>
-                <Title>Log In</Title>
-                <Form>
-                    <Input placeholder="user name" />
-                    <Input placeholder="password" />
-                </Form>
-                <Button>Log In</Button>
-                <Link href="#">DO NOT REMEMBER THE PASSWORD?</Link>
-                <Link href="#">CREATE A NEW ACCOUNT</Link>
-            </Wrapper>
+            <Title>Log In</Title>
+            <Form>
+                <Input placeholder="user name" />
+                <Input placeholder="password" />
+            </Form>
+            <Button>Log In</Button>
+            <Link href="#">FORGOT PASSWORD?</Link>
+            <Link href="#">CREATE A NEW ACCOUNT</Link>
+        </Wrapper>
     </Container>
   )
 }

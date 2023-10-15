@@ -19,7 +19,7 @@ export const sliderItems = [
         title: "SPECIAL ITEMS",
         info: "DON'T COMPROMISE ON STYLE! GET FLAT 30% OFF FOR NEW ARRIVALS.",
         bg: "#76a2cf40",
-    },
+    }
 ]
 
 export const categories = [
@@ -37,7 +37,7 @@ export const categories = [
       id: 3,
       img: "https://images.pexels.com/photos/5480696/pexels-photo-5480696.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500",
       title: "LIGHT JACKETS",
-    },
+    }
   ];
 
   export const popularProducts = [
@@ -55,7 +55,7 @@ export const categories = [
     },
     {
       id:4,
-      img:"https://www.burdastyle.com/pub/media/catalog/product/cache/7bd3727382ce0a860b68816435d76e26/107/BUS-PAT-BURTE-1320516/1170x1470_BS_2016_05_132_front.png",
+      img:"https://i.ibb.co/S03J1hh/Pngtree-game-over-t-shirt-design-6108019.png",
     },
     {
       id:5,
@@ -73,4 +73,8 @@ export const categories = [
       id:8,
       img:"https://www.pngarts.com/files/3/Women-Jacket-PNG-High-Quality-Image.png",
     },
+    {
+      id:9,
+      img:"https://i.ibb.co/9898kvZ/pngwing-com.png",
+    }
   ]

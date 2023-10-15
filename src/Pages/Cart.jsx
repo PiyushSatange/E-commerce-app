@@ -154,11 +154,13 @@ const Cart = () => {
   return (
     <Container>
       <Navbar />
+
       <Announcement />
+
       <MainContainer>
         <Title>YOUR BAG</Title>
+
         <ButtonsBar>
-         
           <ButtonContainer position={"Left"}>
             <Button buttonType={"shopping"}>
             <Link to={"/"} style={{color: "black", textDecoration:"none"}}>CONTINUE SHOPPING</Link></Button>
@@ -168,12 +170,15 @@ const Cart = () => {
             <A href="#">Shopping Bag(2)</A>
             <A href="#">Your Wishlist(0)</A>
           </MiddleButtonBar>
+
           <ButtonContainer position={"Right"}>
             <Button buttonType={"checkout"}>CHECKOUT NOW</Button>
           </ButtonContainer>
         </ButtonsBar>
+
         <Wrapper>
           <ItemBox>
+            {/* Item no 1 */}
             <Item>
               <ImgContainer>
                 <Image src="https://i.pinimg.com/originals/2d/af/f8/2daff8e0823e51dd752704a47d5b795c.png" />
@@ -195,6 +200,7 @@ const Cart = () => {
                 </Price>
               </PriceContainer>
             </Item>
+            {/* Item no 2 */}
             <Item>
               <ImgContainer>
                 <Image src="https://hips.hearstapps.com/vader-prod.s3.amazonaws.com/1614188818-TD1MTHU_SHOE_ANGLE_GLOBAL_MENS_TREE_DASHERS_THUNDER_b01b1013-cd8d-48e7-bed9-52db26515dc4.png?crop=1xw:1.00xh;center,top&resize=480%3A%2A" />
@@ -217,6 +223,8 @@ const Cart = () => {
               </PriceContainer>
             </Item>
           </ItemBox>
+          
+          {/* Side box for order summery */}
           <Summary>
             <STitle>ORDER SUMMARY</STitle>
             <CalculationRow>

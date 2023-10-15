@@ -17,7 +17,7 @@ const Products = () => {
         {popularProducts.map((item) => (
           <Link to={"/Item"}>
             <Product item={item} key={item.id}/>
-            </Link>
+          </Link>
         ))}
     </Wrapper>
   )

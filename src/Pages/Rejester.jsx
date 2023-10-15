@@ -70,11 +70,11 @@ const Rejester = () => {
 
                     <Input placeholder="user name" />
 
-                    <Input placeholder="email" />
+                    <Input placeholder="email" type="email"/>
 
-                    <Input placeholder="password" />
+                    <Input placeholder="password" type="password"/>
 
-                    <Input placeholder="confirm password" />
+                    <Input placeholder="confirm password" type="password"/>
 
                 </Form>
                 <Policy>By creating an account I consent to the processing of my personal data in accordance with the <B>PRIVACY POLICY</B></Policy>

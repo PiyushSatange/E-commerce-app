@@ -93,8 +93,8 @@ const Footer = () => {
   return (
     <Container>
         <Left>
-            <Title>LAMA.</Title>
-            <Info>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alterationin some form. by injected humour, or randamised words which don't look even slightly believable.</Info>
+            <Title>PNVS.COM</Title>
+            <Info>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alterationin some form. by injected humour, or randamised words which dont look even slightly believable.</Info>
             <IconContainer>
                 <Icon color="#4867AA"><Facebook style={{fontSize: "35px"}}/></Icon>
                 <Icon color="#F7006F"><Instagram style={{fontSize: "35px"}}/></Icon>
