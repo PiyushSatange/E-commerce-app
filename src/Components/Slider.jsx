@@ -38,7 +38,7 @@ const Slide = styled.div`
     width:100vw;
     height:100vh;
     display: flex;
-    aling-items: center;
+    align-items: center;
     background-color: ${props=> props.bg};
 
 `
