@@ -1,7 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
 import Product from './Product'
-import { popularProducts } from '../data'
 import { Link } from 'react-router-dom';
 
 const Wrapper = styled.div`
@@ -11,15 +10,15 @@ const Wrapper = styled.div`
     justify-content: space-between;
 `
 
-const Products = () => {
+const Products = ({ProductData}) => {
   return (
     <Wrapper>
-        {popularProducts.map((item) => (
-          <Link to={"/Item"} key={item.id}>
+        {ProductData.map((item)=>(
+          <Link to={"/Item"} key={item.pid}>
             <Product item={item}/>
           </Link>
         ))}
-    </Wrapper>
+    </Wrapper> 
   )
 }
 

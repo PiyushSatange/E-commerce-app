@@ -57,7 +57,7 @@ const Icon = styled.div`
 export const Product = ({ item }) => {
     return (
         <Wrapper>
-            <Image src={item.img} />
+            <Image src={item.purl} alt={item.pid}/>
 
             <Icons>
                 <Icon>
